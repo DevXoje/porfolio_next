@@ -1,0 +1,52 @@
+[debug] [2023-01-11T09:29:47.425Z] ----------------------------------------------------------------------
+[debug] [2023-01-11T09:29:47.427Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-01-11T09:29:47.427Z] CLI Version:   11.20.0
+[debug] [2023-01-11T09:29:47.428Z] Platform:      win32
+[debug] [2023-01-11T09:29:47.428Z] Node Version:  v16.14.2
+[debug] [2023-01-11T09:29:47.429Z] Time:          Wed Jan 11 2023 10:29:47 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-11T09:29:47.429Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-11T09:29:47.436Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-11T09:29:47.437Z] > authorizing via signed-in user (vilchessanchezjose@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\vilch\WebstormProjects\porfolio_next
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-11T09:30:00.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-11T09:30:00.630Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-11T09:30:00.630Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project porfolio-8e352 (Porfolio) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\vilch\WebstormProjects\porfolio_next 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=999907464&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-01-11T09:30:55.134Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-01-11T09:30:55.135Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-01-11T09:30:55.527Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-01-11T09:30:55.527Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-01-11T09:30:55.536Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-01-11T09:30:55.906Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-01-11T09:30:55.906Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"DevXoje","id":52458670,"node_id":"MDQ6VXNlcjUyNDU4Njcw","avatar_url":"https://avatars.githubusercontent.com/u/52458670?v=4","gravatar_id":"","url":"https://api.github.com/users/DevXoje","html_url":"https://github.com/DevXoje","followers_url":"https://api.github.com/users/DevXoje/followers","following_url":"https://api.github.com/users/DevXoje/following{/other_user}","gists_url":"https://api.github.com/users/DevXoje/gists{/gist_id}","starred_url":"https://api.github.com/users/DevXoje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/DevXoje/subscriptions","organizations_url":"https://api.github.com/users/DevXoje/orgs","repos_url":"https://api.github.com/users/DevXoje/repos","events_url":"https://api.github.com/users/DevXoje/events{/privacy}","received_events_url":"https://api.github.com/users/DevXoje/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":35,"public_gists":0,"followers":4,"following":18,"created_at":"2019-07-02T14:05:56Z","updated_at":"2023-01-10T18:50:55Z","private_gists":0,"total_private_repos":13,"owned_private_repos":13,"disk_usage":392063,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as DevXoje 
+[info] 

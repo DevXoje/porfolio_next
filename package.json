@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev_docker": "docker run -p 3000:3000 nextjs-docker",
+    "build_docker": "docker-compose up --build"
   },
   "dependencies": {
     "@next/font": "13.1.1",
